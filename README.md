@@ -17,6 +17,13 @@ mechanisms affect the robustness of audio-visual models.
 ```bash
 pip install -r requirements
 ```
+
+```
+### Todo
+- [x] trainig and testing code
+- [ ] models
+```
+
 ### Audio-Visual Attack
 There are typos in the captions of Tab. 1 and Tab. 3. The perturbation strengthens are 0.006 and 0.012 as in Fig. 3 (10^-3) rather than 0.06 and 0.12.
 
@@ -82,12 +89,6 @@ Testing:
 ./scripts/eval_defense_Kinetics.sh
 ```
 
-```
-### Todo
-- [x] trainig and testing code
-- [ ] datasets
-- [ ] models
-```
 
 ### Citation
 
