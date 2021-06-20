@@ -18,7 +18,7 @@ mechanisms affect the robustness of audio-visual models.
 pip install -r requirements
 ```
 ### Audio-Visual Attack
-There are typos in the captions of Tab. 1 and Tab. 3 in the paper. The perturbation strengthens are 0.006 and 0.012 as in Fig. 3 (10^-3) rather than 0.06 and 0.012.
+There are typos in the captions of Tab. 1 and Tab. 3. The perturbation strengthens are 0.006 and 0.012 as in Fig. 3 (10^-3) rather than 0.06 and 0.012.
 
 Training:
 
