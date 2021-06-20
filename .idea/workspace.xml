@@ -103,8 +103,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="440">
-                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="7" />
+              <first_editor relative-caret-position="1188">
+                <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -176,6 +176,11 @@
               <item name="AVrobustness-release" type="b2602c69:ProjectViewProjectNode" />
               <item name="AVrobustness-release" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AVrobustness-release" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AVrobustness-release" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -220,12 +225,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624172488266</updated>
-      <workItem from="1624172491143" duration="1523000" />
+      <workItem from="1624172491143" duration="1821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1523000" />
+    <option name="totallyTimeSpent" value="1821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -433,8 +438,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="440">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="7" />
+          <first_editor relative-caret-position="1188">
+            <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>

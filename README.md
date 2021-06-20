@@ -61,3 +61,9 @@ If you find this work useful, please consider citing it.
   year = {2021}
 }
 </code></pre>
+
+
+ 
+ ### Acknowledgements
+ 
+We borrowed a lot of code from [SoP](https://github.com/hangzhaomit/Sound-of-Pixels). We thank the authors for sharing their codes. If you use our codes, please also cite their nice work.
