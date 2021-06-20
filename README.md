@@ -82,6 +82,12 @@ Testing:
 ./scripts/eval_defense_Kinetics.sh
 ```
 
+```
+### Todo
+- [x] trainig and testing code
+- [ ] datasets
+- [ ] models
+```
 
 ### Citation
 
