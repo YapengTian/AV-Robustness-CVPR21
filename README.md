@@ -17,7 +17,8 @@ mechanisms affect the robustness of audio-visual models.
 ```bash
 pip install -r requirements
 ```
-### Train audio-visual models on the three datasets 
+### Audio-Visual Attack
+There are typos in the captions of Tab. 1 and Tab. 3 in the paper. The perturbation strengthens are 0.006 and 0.012 as in Fig. 3 (10^-3) rather than 0.06 and 0.012.
 
 Training:
 
@@ -47,6 +48,38 @@ Testing:
 
 ```bash
 ./scripts/eval_attack_Kinetics.sh
+```
+
+
+### Audio-Visual Defense against Multimodal Attacks 
+
+Training:
+
+```bash
+./scripts/train_defense_MUSIC.sh
+```
+
+```bash
+./scripts/train_defense_AVE.sh
+```
+
+```bash
+./scripts/train_defense_Kinetics.sh
+```
+
+Testing: 
+
+```bash
+./scripts/eval_defense_MUSIC.sh
+```
+
+```bash
+./scripts/eval_defense_AVE.sh
+```
+
+
+```bash
+./scripts/eval_defense_Kinetics.sh
 ```
 
 
