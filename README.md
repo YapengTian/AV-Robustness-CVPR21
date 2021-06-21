@@ -2,6 +2,7 @@ Can audio-visual integration strengthen robustness under multimodal attacks? (To
 
 [Yapeng Tian](http://yapengtian.org/) and [Chenliang Xu](https://www.cs.rochester.edu/~cxu22/) 
 
+*This repository is under construction.
 
 ### Robustness of audio-visual learning under multimodal attacks
 
@@ -104,6 +105,6 @@ If you find this work useful, please consider citing it.
 
 
  
- ### Acknowledgements
+ ### Acknowledgement
  
-We borrowed a lot of code from [SoP](https://github.com/hangzhaomit/Sound-of-Pixels). We thank the authors for sharing their codes. If you use our codes, please also cite their nice work.
+We borrowed a lot of code from [SoP](https://github.com/hangzhaomit/Sound-of-Pixels). We thank the authors for sharing their codes. If you use our code, please also cite their nice work.
