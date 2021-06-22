@@ -19,11 +19,6 @@ mechanisms affect the robustness of audio-visual models.
 pip install -r requirements
 ```
 
-```
-### Todo
-- [x] trainig and testing code
-- [ ] models
-```
 
 ### Datasets
 1. Prepare video datasets.
