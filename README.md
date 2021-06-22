@@ -41,9 +41,10 @@ pip install -r requirements
 
 2. Preprocess videos. 
 
-    a. Extract frames at 8fps and waveforms at 11025Hz from videos. We have following directory structure:
-    ```
-    data
+    a. Extract frames at 8fps and waveforms at 11025Hz from videos. We have following directory structure for each dataset:
+    ```  
+    ├── MUSIC
+    ├── data
     ├── audio
     |   ├── acoustic_guitar
     │   |   ├── M3dekVSwNjY.wav
@@ -65,6 +66,7 @@ pip install -r requirements
     │   |   |   ├── ...
     │   |   ├── ...
     │   ├── ...
+    
 
 ### Audio-Visual Attack
 There are typos in the captions of Tab. 1 and Tab. 3. The perturbation strengthens are 0.006 and 0.012 as in Fig. 3 (10^-3) rather than 0.06 and 0.12.
