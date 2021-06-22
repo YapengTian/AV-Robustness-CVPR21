@@ -68,7 +68,7 @@ pip install -r requirements
     │   ├── ...
     
 
-### Audio-Visual Attack
+### Multimodal Attack
 There are typos in the captions of Tab. 1 and Tab. 3. The perturbation strengthens are 0.006 and 0.012 as in Fig. 3 (10^-3) rather than 0.06 and 0.12.
 
 Training:
