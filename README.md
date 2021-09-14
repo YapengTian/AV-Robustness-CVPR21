@@ -133,11 +133,13 @@ Testing:
 
 If you find this work useful, please consider citing it.
 
-<pre><code>@InProceedings{tian2020avrobustness,
-  author={Tian, Yapeng and Xu, Chenliang},
+<pre><code>
+@inproceedings{tian2021can,
   title={Can audio-visual integration strengthen robustness under multimodal attacks?},
-  booktitle = {CVPR},
-  year = {2021}
+  author={Tian, Yapeng and Xu, Chenliang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5601--5611},
+  year={2021}
 }
 </code></pre>
 
