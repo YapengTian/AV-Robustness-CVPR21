@@ -62,6 +62,11 @@ pip install -r requirements
     │   |   ├── ...
     │   ├── ...
     
+    Please check:
+    ```bash
+    ./scripts/extract_audio.py
+    ./scripts/extract_frames.py
+    ```
 
 ### Multimodal Attack
 There are typos in the captions of Tab. 1 and Tab. 3. The perturbation strengthens are 0.006 and 0.012 as in Fig. 3 (10^-3) rather than 0.06 and 0.12. Next, we will use experiments on the AVE dataset as an example. Scripts for other datasets can be found in [scripts](https://github.com/YapengTian/AV-Robustness-CVPR21/tree/master/scripts).
