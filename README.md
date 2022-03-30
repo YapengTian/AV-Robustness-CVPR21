@@ -63,7 +63,7 @@ pip install -r requirements
     │   ├── ...
   ```
 Please check:
-  ```bash
+  ```
       ./scripts/extract_audio.py
       ./scripts/extract_frames.py
   ```
