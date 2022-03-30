@@ -67,6 +67,8 @@ class NetWrapper(torch.nn.Module):
         self.D_v = args.Dv
         self.D_a = args.Da
         self.I = args.I
+        self.alpha_a = args.alpha_a
+        self.alpha_v = args.alpha_v
 
     def compute_coef(self, D, X):
         #A = torch.softmax(torch.mm(D.t().to(X.device), X)/np.sqrt(512), dim=0)#
@@ -113,10 +115,10 @@ class NetWrapper(torch.nn.Module):
         # A_v = self.compute_coef(self.D_v, feat_frame)
         # A_a = self.compute_coef(self.D_a, feat_sound)
 
-        A_v = self.ISTA(self.D_v, feat_frame, torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha=2e-6, lamb=0.1) #MUSIC 6e-6/kINETICS2e-6/ave 2e-6
-        A_a = self.ISTA(self.D_a, feat_sound,torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha=7e-7, lamb=0.1) #MUSIC 1e-6/kINETICS5.8e-7/ave7e-7
+        A_v = self.ISTA(self.D_v, feat_frame, torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha= self.alpha_v, lamb=0.1) #MUSIC 6e-6/kINETICS2e-6/ave 2e-6
+        A_a = self.ISTA(self.D_a, feat_sound,torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha= self.alpha_a, lamb=0.1) #MUSIC 1e-6/kINETICS5.8e-7/ave7e-7
 
-        a = 0.5 # 0.6 KS 0.5MUSIC
+        a = 0.5 # 0.6 KS； 0.5 MUSIC/AVE
         feat_frame= torch.mm(self.D_v.to(feat_frame.device), A_v).permute(1,0)*a +  (1-a)*feat_frame.permute(1,0)#
         feat_sound = torch.mm(self.D_a.to(feat_sound.device), A_a).permute(1,0)*a +  (1-a)*feat_sound.permute(1,0)#
         pred = self.net_classifier(feat_frame, feat_sound)

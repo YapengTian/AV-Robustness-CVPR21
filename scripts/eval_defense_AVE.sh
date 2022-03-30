@@ -36,6 +36,10 @@ OPTS+="--num_frames 1 "
 OPTS+="--stride_frames 8 "
 OPTS+="--frameRate 8 "
 
+# Sparse solver
+OPTS+="--alpha_a  7e-7 "
+OPTS+="--alpha_v  2e-6 "
+
 # audio-related
 OPTS+="--audLen 65535 " # 65535
 OPTS+="--audRate 11025 " #11025

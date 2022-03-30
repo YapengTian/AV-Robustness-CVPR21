@@ -78,6 +78,13 @@ class ArgParser(object):
         parser.add_argument('--frameRate', default=8, type=float,
                             help='video frame sampling rate')
 
+        # Sparsity arguments
+        parser.add_argument('--alpha_a', default=7e-7, type=float,
+                            help='parameter for ISTA. MUSIC 1e-6/kINETICS5.8e-7/ave7e-7')
+        parser.add_argument('--alpha_v', default=2e-6, type=float,
+                            help='parameter for ISTA. MUSIC 6e-6/kINETICS2e-6/ave 2e-6')
+
+
         # Misc arguments
         parser.add_argument('--seed', default=1234, type=int,
                             help='manual seed')
