@@ -21,7 +21,7 @@ OPTS+="--audio_path /home/cxu-serve/p1/ytian21/dat/AVSS_data/AVE_Dataset/data/au
 OPTS+="--frame_path /home/cxu-serve/p1/ytian21/dat/AVSS_data/AVE_Dataset/data/frames "
 
 # attack type
-OPTS+="--attack_type fsgm "
+OPTS+="--attack_type mim "
 
 # logscale in frequency
 OPTS+="--num_mix 1 "
