@@ -68,66 +68,29 @@ There are typos in the captions of Tab. 1 and Tab. 3. The perturbation strengthe
 
 Training:
 
-
-```bash
-./scripts/train_attack_MUSIC.sh
-```
-
 ```bash
 ./scripts/train_attack_AVE.sh
-```
-
-```bash
-./scripts/train_attack_Kinetics.sh
 ```
 
 Testing: 
 
 ```bash
-./scripts/eval_attack_MUSIC.sh
-```
-
-```bash
 ./scripts/eval_attack_AVE.sh
 ```
-
-
-```bash
-./scripts/eval_attack_Kinetics.sh
-```
-
 
 ### Audio-Visual Defense against Multimodal Attacks 
 
 Training:
 
 ```bash
-./scripts/train_defense_MUSIC.sh
-```
-
-```bash
 ./scripts/train_defense_AVE.sh
-```
-
-```bash
-./scripts/train_defense_Kinetics.sh
 ```
 
 Testing: 
 
 ```bash
-./scripts/eval_defense_MUSIC.sh
-```
-
-```bash
 ./scripts/eval_defense_AVE.sh
 ```
-
-
-```bash
-./scripts/eval_defense_Kinetics.sh
-```
-
 
 ### Citation
 
