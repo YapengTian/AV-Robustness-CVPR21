@@ -22,9 +22,9 @@ pip install -r requirements
 ### Datasets
 1. Prepare video datasets.
 
-    a. Download MUSIC dataset from: https://github.com/roudimit/MUSIC_dataset/blob/master/MUSIC_solo_videos.json
-    
-    b. Download AVE dataset from: https://drive.google.com/file/d/1FjKwe79e0u96vdjIVwfRQ1V6SoDHe7kK/view
+    a. Download AVE dataset from: https://drive.google.com/file/d/1FjKwe79e0u96vdjIVwfRQ1V6SoDHe7kK/view
+
+    b. Download MUSIC dataset from: https://github.com/roudimit/MUSIC_dataset/blob/master/MUSIC_solo_videos.json
     
     c. Download Kinetics-Sound (KS) dataset. KS is a subset of [Kinetics dataset](https://github.com/cvdfoundation/kinetics-dataset) in 27 categories: laughing, playing_clarinet, singing,
        playing_harmonica, playing_keyboard, playing_xylophone, playing_bass_guitar,
