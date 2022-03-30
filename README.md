@@ -27,7 +27,7 @@ pip install -r requirements
     
     b. Download AVE dataset from: https://drive.google.com/file/d/1FjKwe79e0u96vdjIVwfRQ1V6SoDHe7kK/view
     
-    c. Download Kinetics-Sound (KS) dataset. KS is a subset of Kinetics dataset in 27 categories: laughing, playing_clarinet, singing,
+    c. Download Kinetics-Sound (KS) dataset. KS is a subset of [Kinetics dataset](https://github.com/cvdfoundation/kinetics-dataset) in 27 categories: laughing, playing_clarinet, singing,
        playing_harmonica, playing_keyboard, playing_xylophone, playing_bass_guitar,
        tapping_guitar, playing_drums, playing_piano, ripping_paper, playing_saxophone,
        tickling, playing_trumpet, tapping_pen, playing_organ, tap_dancing, playing_accordion,
