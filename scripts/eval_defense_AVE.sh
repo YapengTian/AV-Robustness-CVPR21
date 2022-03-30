@@ -2,7 +2,7 @@
 
 OPTS=""
 OPTS+="--mode eval "
-OPTS+="--id AVE_av_reg_mism_FB-resnet18-anet-concat-fix-frames1stride8-maxpool-epoch30-step10_20 "
+OPTS+="--id AVE_av_reg_defense-resnet18-anet-concat-fix-frames1stride8-maxpool-epoch30-step10_20 "
 OPTS+="--list_train data/train_AVE.csv "
 OPTS+="--list_val data/test_AVE.csv "
 
@@ -21,11 +21,11 @@ OPTS+="--categories Church_bell Male_speech Bark airplane Race_car Female_speech
 OPTS+="--audio_path /home/cxu-serve/p1/ytian21/dat/AVSS_data/AVE_Dataset/data/audio "
 OPTS+="--frame_path /home/cxu-serve/p1/ytian21/dat/AVSS_data/AVE_Dataset/data/frames "
 
-OPTS+="--weights_Dv data/ckpt/AVE_av_reg_msim-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
-OPTS+="--weights_Da data/ckpt/AVE_av_reg_msim-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
+OPTS+="--weights_Dv data/ckpt/AVE_av_reg-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
+OPTS+="--weights_Da data/ckpt/AVE_av_reg-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
 
 # attack type
-OPTS+="--attack_type fsgm "
+OPTS+="--attack_type mim "
 
 # logscale in frequency
 OPTS+="--num_mix 1 "
@@ -40,7 +40,7 @@ OPTS+="--frameRate 8 "
 OPTS+="--audLen 65535 " # 65535
 OPTS+="--audRate 11025 " #11025
 
-OPTS+="--num_gpus 3 "
-OPTS+="--batch_size_per_gpu 6 "
+OPTS+="--num_gpus 2 "
+OPTS+="--batch_size_per_gpu 4 "
 
 python -u main_defense.py $OPTS

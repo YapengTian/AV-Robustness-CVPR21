@@ -1,4 +1,5 @@
 import os
+# os.environ["CUDA_VISIBLE_DEVICES"]="2,3"
 import random
 import time
 
@@ -96,7 +97,7 @@ class NetWrapper(torch.nn.Module):
             if torch.norm(h - h_prime) < 0.0008:
                 converged = True
             iter += 1
-            if iter>2000: #2000
+            if iter>1500: #2000
                 break
         return h
 
@@ -112,8 +113,8 @@ class NetWrapper(torch.nn.Module):
         # A_v = self.compute_coef(self.D_v, feat_frame)
         # A_a = self.compute_coef(self.D_a, feat_sound)
 
-        A_v = self.ISTA(self.D_v, feat_frame, torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha=6e-6, lamb=0.1) #MUSIC 6e-6/kINETICS2e-6/ave 2e-6
-        A_a = self.ISTA(self.D_a, feat_sound,torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha=1e-6, lamb=0.1) #MUSIC 1e-6/kINETICS5.8e-7/ave7e-7
+        A_v = self.ISTA(self.D_v, feat_frame, torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha=2e-6, lamb=0.1) #MUSIC 6e-6/kINETICS2e-6/ave 2e-6
+        A_a = self.ISTA(self.D_a, feat_sound,torch.zeros(self.D_v.size(1), feat_frame.size(1)).to(feat_frame.device), alpha=7e-7, lamb=0.1) #MUSIC 1e-6/kINETICS5.8e-7/ave7e-7
 
         a = 0.5 # 0.6 KS 0.5MUSIC
         feat_frame= torch.mm(self.D_v.to(feat_frame.device), A_v).permute(1,0)*a +  (1-a)*feat_frame.permute(1,0)#
