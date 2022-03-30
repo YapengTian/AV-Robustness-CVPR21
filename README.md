@@ -33,7 +33,7 @@ pip install -r requirements
        blowing_nose, shuffling_cards, playing_guitar, playing_trombone, playing_bagpipes, shoveling_snow,
        bowling, playing_violin, chopping_wood.
 
-2. Preprocess videos. 
+2. Preprocess videos. Please check scripts: [scripts/extract_audio.py](https://github.com/YapengTian/AV-Robustness-CVPR21/blob/master/scripts/extract_audio.py) and [scripts/extract_frames.py](https://github.com/YapengTian/AV-Robustness-CVPR21/blob/master/scripts/extract_frames.py). 
 
     a. Extract frames at 8fps and waveforms at 11025Hz from videos. We have following directory structure for each dataset:
     ```  
@@ -61,7 +61,7 @@ pip install -r requirements
     │   |   ├── ...
     │   ├── ...
     ```
-Please check scripts: [scripts/extract_audio.py](https://github.com/YapengTian/AV-Robustness-CVPR21/blob/master/scripts/extract_audio.py) and [scripts/extract_frames.py](https://github.com/YapengTian/AV-Robustness-CVPR21/blob/master/scripts/extract_frames.py).
+
 
 
 
