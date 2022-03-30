@@ -62,11 +62,8 @@ pip install -r requirements
     │   |   ├── ...
     │   ├── ...
   ```
-Please check:
-  ```
-      ./scripts/extract_audio.py
-      ./scripts/extract_frames.py
-  ```
+Please check scripts: [scripts/extract_audio.py](https://github.com/YapengTian/AV-Robustness-CVPR21/blob/master/scripts/extract_audio.py) and [scripts/extract_frames.py](https://github.com/YapengTian/AV-Robustness-CVPR21/blob/master/scripts/extract_frames.py).
+
 
 
 ### Multimodal Attack
