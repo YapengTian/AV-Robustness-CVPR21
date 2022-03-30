@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OPTS=""
-OPTS+="--id Kinetics_av_reg_maxSim "
+OPTS+="--id Kinetics_av_reg "
 OPTS+="--list_train data/train_kinetics.csv "
 OPTS+="--list_val data/val_kinetics.csv "
 

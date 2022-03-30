@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OPTS=""
-OPTS+="--id AVE_av_reg_maxSim "
+OPTS+="--id AVE_av_reg "
 OPTS+="--list_train data/train_AVE.csv "
 OPTS+="--list_val data/val_AVE.csv "
 

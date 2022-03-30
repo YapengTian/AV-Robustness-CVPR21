@@ -1,7 +1,7 @@
 #!/bin/bash
 
 OPTS=""
-OPTS+="--id MUSIC_av_reg_maxSim "
+OPTS+="--id MUSIC_av_reg "
 OPTS+="--list_train data/train.csv "
 OPTS+="--list_val data/val.csv "
 

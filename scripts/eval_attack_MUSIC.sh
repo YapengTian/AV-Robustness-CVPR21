@@ -14,7 +14,7 @@ OPTS+="--img_pool maxpool "
 OPTS+="--dic learn "
 
 # attack type
-OPTS+="--attack_type mim "
+OPTS+="--attack_type fsgm "
 
 # logscale in frequency
 OPTS+="--num_mix 1 "

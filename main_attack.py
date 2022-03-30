@@ -176,7 +176,7 @@ def evaluate_adv(netWrapper, loader, history, epoch, args):
         total = 0
         feats_v = []
         feats_a = []
-        outF = open("data/attacks/AVE.txt", "w")
+    
         for i, batch_data in enumerate(loader):
             audios = batch_data['audios']
             frames = batch_data['frames']
@@ -355,12 +355,11 @@ def evaluate_adv(netWrapper, loader, history, epoch, args):
 
             # viz
             output_visuals(vis_rows,batch_data, data_viz, args)
-        outF.close()
 
         # D_v = np.concatenate(np.array(feats_v), axis=0)
         # D_a = np.concatenate(np.array(feats_a), axis=0)
         # print(D_v.shape, D_a.shape)
-        #
+        
         # np.save('{}/Fv{}'.format(args.ckpt, suffix_best), D_v)
         # np.save('{}/Fa{}'.format(args.ckpt, suffix_best), D_a)
 
@@ -547,11 +546,9 @@ def main(args):
     builder = ModelBuilder()
     net_sound = builder.build_sound(
         arch=args.arch_sound,
-        fc_dim=args.num_channels,
         weights=args.weights_sound)
     net_frame = builder.build_frame(
         arch=args.arch_frame,
-        fc_dim=args.num_channels,
         pool_type=args.img_pool,
         weights=args.weights_frame)
     net_classifier = builder.build_classifier(
