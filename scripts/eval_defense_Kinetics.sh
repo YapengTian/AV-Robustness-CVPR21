@@ -2,7 +2,7 @@
 
 OPTS=""
 OPTS+="--mode eval "
-OPTS+="--id Kinetics_av_reg_msim_v1-resnet18-anet-concat-fix-frames1stride8-maxpool-epoch30-step10_20 "
+OPTS+="--id Kinetics_av_reg_defense-resnet18-anet-concat-fix-frames1stride8-maxpool-epoch30-step10_20 "
 OPTS+="--list_train data/train_kinetics.csv "
 OPTS+="--list_val data/test_kinetics.csv "
 
@@ -22,8 +22,8 @@ OPTS+="--categories laughing playing_clarinet singing
 OPTS+="--audio_path /home/cxu-serve/p1/ytian21/dat/Kinetics/data/audio "
 OPTS+="--frame_path /home/cxu-serve/p1/ytian21/dat/Kinetics/data/frames "
 
-OPTS+="--weights_Dv data/ckpt/Kinetics_av_reg_msim_v1-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
-OPTS+="--weights_Da data/ckpt/Kinetics_av_reg_msim_v1-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
+OPTS+="--weights_Dv data/ckpt/Kinetics_av_reg-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
+OPTS+="--weights_Da data/ckpt/Kinetics_av_reg-resnet18-anet-concat-learn-frames1stride8-maxpool-epoch30-step10_20 "
 
 # attack type
 OPTS+="--attack_type mim "
