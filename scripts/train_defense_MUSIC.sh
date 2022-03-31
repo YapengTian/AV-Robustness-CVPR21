@@ -44,8 +44,8 @@ OPTS+="--num_gpus 3 "
 OPTS+="--workers 32 "
 OPTS+="--batch_size_per_gpu 12 "
 OPTS+="--lr_frame 1e-4 " #1e-4
-OPTS+="--lr_sound 1e-4 " #1e-3
-OPTS+="--lr_classifier 1e-4 " #1e-3
+OPTS+="--lr_sound 1e-3 " #1e-3
+OPTS+="--lr_classifier 1e-3 " #1e-3
 OPTS+="--num_epoch 100 "
 OPTS+="--lr_steps 30 60 90 "
 

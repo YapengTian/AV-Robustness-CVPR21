@@ -465,7 +465,7 @@ def train(netWrapper, loader, optimizer, history, epoch, args):
         output, feat_v, feat_a = netWrapper.forward(frame, audio)
         feats_v.append(feat_v.detach())
         feats_a.append(feat_a.detach())
-        err = criterion(output, gt)# + F.cosine_similarity(feat_v, feat_a, 1).mean()
+        err = criterion(output, gt) #+ F.cosine_similarity(feat_v, feat_a, 1).mean()
 
         # backward
         err.backward()

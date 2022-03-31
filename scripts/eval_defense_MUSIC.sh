@@ -23,8 +23,8 @@ OPTS+="--num_mix 1 "
 OPTS+="--log_freq 1 "
 
 # frames-related
-OPTS+="--num_gpus 4 "
-OPTS+="--batch_size_per_gpu 12 "
+OPTS+="--num_gpus 2 "
+OPTS+="--batch_size_per_gpu 4 "
 OPTS+="--num_frames 1 "
 OPTS+="--stride_frames 8 "
 OPTS+="--frameRate 8 "

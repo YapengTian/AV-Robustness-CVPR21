@@ -99,7 +99,7 @@ class NetWrapper(torch.nn.Module):
             if torch.norm(h - h_prime) < 0.0008:
                 converged = True
             iter += 1
-            if iter>1500: #2000
+            if iter>2000: #2000
                 break
         return h
 
