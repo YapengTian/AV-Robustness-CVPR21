@@ -82,7 +82,8 @@ Testing:
 
 ### Audio-Visual Defense against Multimodal Attacks 
 
-In our original defense experiments, we learn the external feature memory banks using the MinSim constraint-based model. In implementation, we can add the MinSim loss term (please see L468 of main_attack.py) to re-train the above model. Then, run the following defense training. Since the MUSIC dataset is small, it is important to follow our original training pipeline to reproduce our results.
+In our original defense experiments, we learn the external feature memory banks using the MinSim constraint-based model. In implementation, we can add the MinSim loss term (please see L468 of main_attack.py) to re-train the above model. Then, run the following defense training.
+Since the MUSIC dataset is small, it is important to follow our original training pipeline to reproduce our results. For the AVE dataset, directly training the defense model can obtain comparable results as shown in the supp of the paper. 
 
 Training:
 
